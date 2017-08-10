@@ -2,7 +2,7 @@ CXXFLAGS = -std=c++14 -O2
 all: cde-package.tar.gz
 mapper: mapper.cpp
 reducer: reducer.cpp
-# d is where cde-package.tar.gz is extracted 
+# ARCHIVE_SYMLINK is where cde-package.tar.gz will be extracted into
 cde-package.tar.gz: mapper reducer
 	rm -rf cde-package
 	echo | cde ./mapper
